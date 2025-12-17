@@ -1,3 +1,5 @@
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
 namespace Quiz05___Methods
 {
     public partial class Form1 : Form
@@ -17,6 +19,31 @@ namespace Quiz05___Methods
         {
             Form3 Form3 = new Form3();
             Form3.Show();
+        }
+
+        private void q1Button_Click(object sender, EventArgs e)
+        {
+
+
+            Random randgen = new Random();
+            int number = randgen.Next(1, 10);
+            outputLabel.Text = number.ToString();
+
+
+
+
+
+
+            
+
+
+
+
+        }
+
+        private void q2Button_Click(object sender, EventArgs e)
+        {
+            //int sum = (1 - 100); string outputLabel.Text ;
         }
     }
 }
